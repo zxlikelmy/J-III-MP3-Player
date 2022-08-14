@@ -1,0 +1,162 @@
+@charset "utf-8";
+body{
+    background-image: url(../picture/背景.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner{
+    margin: 30px;
+    width: 1200px;
+    height: 400px;
+    background-image: url(../picture/bgimg.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 50%;
+    opacity: 0.8;
+    box-shadow: 10px 6px 5px 1px black;
+    position: relative;
+}
+
+.banner ul li{
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+}
+.banner ul li img{
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.l1{
+    top: 80px;
+    left: 150px;
+}
+.l2{
+    top: 250px;
+    left: 300px;
+}
+.l3{
+    top: 121px;
+    left: 549px;
+}
+.l4{
+    top: 80px;
+    left: 850px;
+}
+.l5{
+    top: 250px;
+    left: 1050px;
+}
+
+.s{
+    width: 80px;
+    height: 80px;
+}
+.m{
+    width: 110px;
+    height: 110px;
+}
+.l{
+    width: 150px;
+    height: 150px;
+}
+
+/*播放器部分*/
+.player{
+    position: fixed;
+    top: 600px;
+    left: 0px;
+    width: 500px;
+    height: 100px;
+    background-color: rgb(90,90,90);
+    box-shadow: 10px 6px 5px 1px black;
+    opacity: 120%;
+}
+.m_img img{
+    width: 80px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+.m_name{
+    margin-top: 38px;
+    margin-left: 18px;
+    font-size: 20px;
+    float: left;
+}
+.m_btn{
+    position: absolute;
+    left: 250px;
+}
+.m_pre{
+    width: 30px;
+    height: 30px;
+    background-image: url(../picture/icon/prev_icon.png);
+    background-size: cover;
+    margin-top: 38px;
+    margin-left: 18px;
+    float: left;
+}
+.m_play{
+    width: 30px;
+    height: 30px;
+    background-image: url(../picture/icon/play.png);
+    background-size: cover;
+    margin-top: 38px;
+    margin-left: 18px;
+    float: left;
+}
+.m_pause{
+    width: 30px;
+    height: 30px;
+    background-image: url(../picture/icon/pause.png);
+    background-size: cover;
+    margin-top: 38px;
+    margin-left: 18px;
+    float: left;
+}
+.m_next{
+    width: 30px;
+    height: 30px;
+    background-image: url(../picture/icon/next.png);
+    background-size: cover;
+    margin-top: 38px;
+    margin-left: 18px;
+    float: left;
+}
+.change{
+    width: 23px;
+    height: 100px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -17px;
+    float: right;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+.change_left{
+    background-image: url(../picture/icon/zuo.png);
+}
+.change_right{
+    background-image: url(../picture/icon/you.png);
+}
+
+.rotate{
+    animation: img_rotate infinite 5s linear;
+}
+
+.rotate_pause{
+    animation-play-state:paused;
+}
+
+/*定义动画*/
+@keyframes img_rotate {
+    from{
+        transform: rotate(0);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
